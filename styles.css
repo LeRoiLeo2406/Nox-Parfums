@@ -29,6 +29,10 @@ body {
     color: white;
 }
 
+.logo {
+    cursor: pointer;
+}
+
 /* Hero Section */
 .hero {
     height: 100vh;
