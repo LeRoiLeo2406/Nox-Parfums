@@ -1,0 +1,158 @@
+/* styles.css */
+@font-face {
+    font-family: 'TableShank';
+    src: url('fonts/TableShank.ttf') format('truetype');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-family: 'REM', sans-serif;
+}
+
+/* Navigation Bar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-family: 'REM', sans-serif;
+    font-size: 24px;
+    color: white;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Section Histoire */
+.histoire {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.histoire .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.histoire .text {
+    max-width: 800px;
+    margin-bottom: 30px;
+}
+
+.histoire .text p {
+    text-align: justify;
+    font-size: 18px;
+}
+
+.histoire .image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Section Notes de Fragrance */
+.fragrance {
+    padding: 50px 20px;
+}
+
+.fragrance .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.fragrance .text {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.fragrance .text p, .fragrance .text ul {
+    text-align: justify;
+    font-size: 18px;
+}
+
+.fragrance .image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.fragrance .image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: rgb(0, 0, 0);
+    font-size: 14px;
+}
+
+/* Style pour "CHAOS" */
+.chaos {
+    font-family: 'TableShank', sans-serif;
+    color: #c93385;
+    font-size: 20px;
+}
+
+/* Responsive Design */
+
+@media (min-width: 769px) {
+    .histoire .image img {
+        max-width: 70%;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar .logo {
+        font-size: 20px;
+    }
+
+    .hero {
+        height: 80vh;
+    }
+
+    .histoire .text p {
+        font-size: 18px;
+    }
+
+    .fragrance .content {
+        flex-direction: column;
+    }
+
+    .fragrance .text {
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .fragrance .image {
+        width: 100%;
+    }
+}
